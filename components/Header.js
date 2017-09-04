@@ -29,6 +29,13 @@ const Header = () => (
         top: 25px;
       }
 
+      @media (max-width: 600px){
+        .title-frame {
+          width: 340px;
+          left: -170px;
+        }
+      }
+
     `}</style>
     </div>
 )
