@@ -1,19 +1,13 @@
-import Header from './Header'
 import Head from 'next/head'
 
-const layoutStyle = {
-  'padding-top': 40,
-}
-
 const Layout = (props) => (
-  <div style={layoutStyle}>
+  <div>
     <Head>
       <title>Tarasenko Petro</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     </Head>
-    <Header />
     {props.children}
     <style jsx global>{`
       body: {

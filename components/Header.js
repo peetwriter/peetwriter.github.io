@@ -7,13 +7,29 @@ const linkStyle = {
 const Header = () => (
     <div className="header-holder">
       <div className="title-frame"></div>
-      <h1>Petro Tarasenko</h1>
+      <h1>
+        <Link href="/">
+          <a>Petro Tarasenko</a>
+        </Link>
+      </h1>
       <style jsx>{`
       h1 {
         font-size: 30px;
         font-weight: 100;
         text-align: center;
         margin-bottom: 30px;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a: hover {
+        text-decoration: none;
+      }
+
+      .header-holder {
+        padding-top: 40px;
       }
 
       .title-frame{
@@ -27,6 +43,7 @@ const Header = () => (
         margin-left: 50%;
         left: -200px;
         top: 25px;
+        z-index: -1;
       }
 
       @media (max-width: 600px){
